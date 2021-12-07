@@ -19,7 +19,7 @@ interface Props {
   children: ReactNode
 }
 
-export function ThemeProvider({ children }: Props): ReactElement {
+export const ThemeProvider = ({ children }: Props): ReactElement => {
   const [style, setStyle] = useState<CSSProperties>()
 
   return (
